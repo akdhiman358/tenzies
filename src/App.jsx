@@ -82,9 +82,10 @@ function App() {
   <main>
      {tenzies && <Confetti className='confetti'/>}
    
-    <h1 className="title">Tenzies</h1>
+    <h1 className="title">Tenzies Game</h1>
     <p className="instructions">
-      {tenzies ? `🎉 Congratulations... You won the Game 🎉`: "Roll until all dice are the same. Click each die to freeze it at its current value between rolls."}
+      {tenzies ? `🎉 Congratulations... You won the Game 🎉`:
+      "To Win this Game you need to get same number on all the dies. Click to freeze the same numbers and keep Rolling.."}
     </p>
     <div className='dice-container'>
       {diceElements}
